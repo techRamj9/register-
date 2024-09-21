@@ -1,0 +1,109 @@
+<iDOCTYPE html>
+    <html lang="en">
+        <head>
+       <meta charset=UTF-8">
+       <meta name="viewport" content ="width =device =width, initial -scale=1.0">
+       <link rel=" stylesheet" href=" https:
+       <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="container" id="signup" style="display:none;">
+                <h1 class="from -title">Register</h1>
+                <form method="post" action="">
+                    <div class="input -group">
+                        <i class="fas fa-user"></i>
+                       <input type="text " id="fname" placeholder="First Name " required>
+        <label for ="fname">First Name </label>
+         </div>
+         <div class ="input-group" >
+            <i class ="fas fa-user" ></i>
+           <input type ="text "  id=iName" placeholder=" Last Name " required > 
+           <label for ="iName" >Last Name </label>
+         </div>
+         <div class ="input-group" >
+            <i class="fas fa-envelope"></i>
+              <input type ="rEmail" id="rEmail"  placeholder="Email "  required>
+              <label for="rEmail" >Email </label>
+         </div>
+         <div class ="input-group" >
+            <i class ="fas fa-lock" ></i>
+            <input type ="password "  id="rpassword" placeholder="password "  required>
+            <label for ="rpassword">password </label>
+         </div>
+         <button class="btn"   id="submitsignup" >sign up</button>
+        </form>
+        <p class ="or">
+            -------or-------
+        </p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+            <p>Already Have Account ?</p>
+            <button id="signinButton">sign in</button>
+        </div>
+       </div>
+       <div class="container" idr="signin">
+        <h1 class="from -title">sign in</h1>
+        <form method="post "action="">
+            <div class="input-group">
+         <i class="fas fa-envelope"></i>
+         <input type ="email " id="email "  placeholder="Email"required>
+         <label for ="email"></label>
+            </div>
+           <div class ="input-group">
+            <i class="fas fa-lock"></i>
+            <input type ="Password " id="password "  placeholder="Password "  required>
+            <label for="password">password</label>
+           </div>
+           <p class="recover">
+            <a href="#">Recover password</a>
+           </p>
+           <button class="btn" id="submitsignin"> sign in </button>
+         </form>
+             <p class="or">
+                --------or------
+             </p> 
+             <div class="icons">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook"></i>
+             </div>
+                 <div class="link ">
+                    <p>Don't have a account ?</p>
+           <button id="signupButton">sign up</button >
+           </div>  
+        </div>
+        <script >
+          const sigupButton=document.getElementById('signUpButton');
+    const sigInButton=document.getElementById('signInButton');
+    const sigInForm=document.getElementById('signIn');
+    const sigUpForm=document.getElementById('signup');
+    
+    signUpButton.addEvetListener('click', function (){
+     signInForm.style.display="none";
+     singUpForm.style.display="block ";
+    })
+    signInButton.addEvetListener('click', function (){
+      sigInForm.style.display="block";
+      singnUpForm.style.display="none";
+    })
+    
+        </script> 
+        <script>
+            <script type="module " src="./homepage.js"></script>
+            </head>
+            <body>
+                
+                <h1>welcome homepage</h1>
+                <div>First Name:<span id="loggedUserFName"></span></div>
+                <div> Last Name:<span id="loggeduserLName"></span></div>
+                <div>email:</div><span id="loggeduserEmail"></span></div>
+                <button id="logout">logout</button>
+    
+        </script>
+    
+    </body>
+      </html>     
+    
+    
